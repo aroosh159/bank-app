@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="UTF-8"/>
+<meta name="viewpoint" content="width-device-width,initial-scale-1.0"/>
+<link rel="stylesheet" href="">
+</head>
+<body style="background-color: aqua;">
+    <center>
+        <p id="demo"></p>
+        <p id="money"></p>
+        <h4>Bank App</h4>
+        </center>
+                <label style="background-color: blue;">Enter your transaction:</label>
+                <input type="text" id="money" value="200"></input>
+                <button onclick ="buyButtonClick() ;id="buy-button">buy</button>
+                <br>
+                <br>
+                <label style="background-color: red;">Your Account name:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Sender Account name:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Purpose of your transaction:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label>Transaction method:</label>
+                
+                <br>
+                <button>Submitt</button> 
+                <br>
+                <br>
+                <center>
+                    Your Balance is : Rs 50,000
+                </center>
+<script>
+          
+                price = 100
+                money = document.getElementById('money').value
+                function buyButtonClick(){
+                    document.getElementById('money').value = money-price;
+                }
+            </script>
+
+</script>
+</body>
+</html>
